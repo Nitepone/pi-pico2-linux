@@ -54,9 +54,9 @@
 #endif
 
 #if defined(SPARKFUN_PROMICRO_RP2350)
-
-// For the pro micro rp2350
-#define SFE_RP2350_XIP_CSI_PIN 19
+#   define SFE_RP2350_XIP_CSI_PIN 19
+#elif defined(PIMORONI_PICO_PLUS2_RP2350)
+#   define SFE_RP2350_XIP_CSI_PIN 47
 #endif
 
 #define PSRAM_LOCATION _u(0x11000000)
